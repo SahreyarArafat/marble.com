@@ -12,7 +12,7 @@
     <header>
         <nav>
             <div class="logo">MARBLE</div>
-            <ul>
+            <ul class="mobile_nav">
                 <li> <a href="#" class="active">HOME    </a> </li>
                 <li> <a href="#">ABOUT   </a> </li>
                 <li> <a href="#">JOURNAL </a> </li>
@@ -20,12 +20,12 @@
                 <li> <a href="#">FEATURES</a> </li>
                 <li> <a href="#">CONTACT </a> </li>
             </ul>
-            <div class="small_device_nav">
-                <div class="line_1"></div>
-                <div class="line_2"></div>
-                <div class="line_3"></div>
-            </div>
         </nav>
+        <div class="small_device_nav">
+            <div class="line_1"></div>
+            <div class="line_2"></div>
+            <div class="line_3"></div>
+        </div>
     </header>
 
     <section class="slider">
@@ -162,6 +162,19 @@
             </p>
         </div>
     </section>
+    <script>
+        document.querySelector('.small_device_nav').addEventListener('click', function() {
+            document.querySelector('.mobile_nav').style.display = 'flex';
+            this.style.display = 'none';
+            document.querySelector('.logo').style.color = 'red';
+            document.querySelector('.logo').addEventListener('click', function() {
+                document.querySelector('.mobile_nav').style.display = 'none';
+                document.querySelector('.small_device_nav').style.display = 'flex';
+                document.querySelector('.logo').style.color = '#4e4e4e';
+
+            })
+        })
+    </script>
 </body>
 
 </html>
