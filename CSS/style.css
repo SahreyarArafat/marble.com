@@ -583,3 +583,34 @@ nav ul li a:focus {
     }
     /* --------footer section is finished--------- */
 }
+
+@media (max-width:750px) {
+    nav {
+        background: whitesmoke;
+        width: 80%;
+        height: 60px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    nav .logo {
+        color: #4e4e4e;
+        font-size: 25px;
+        font-weight: 700;
+        letter-spacing: -1.5px;
+        padding-right: 30px;
+    }
+    /* -----------HEADER IS FINISHED------------ */
+    .testimonial p {
+        font-size: 20px;
+        line-height: 30px;
+        font-family: "RobotoSlab";
+        color: rgb(161, 161, 161);
+        text-align: center;
+        width: auto;
+        padding: 0px 5px;
+    }
+    /* ---------testimonial is finished-------- */
+}
