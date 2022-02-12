@@ -73,6 +73,7 @@ nav ul li a:focus {
     justify-content: center;
     display: none;
     cursor: pointer;
+    margin-right: 20px;
 }
 
 .small_device_nav:hover .line_1,
