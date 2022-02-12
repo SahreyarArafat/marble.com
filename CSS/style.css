@@ -9,6 +9,22 @@ section {
     overflow: hidden;
 }
 
+.preloader {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.preloader img {
+    width: 100%;
+}
+
+.preloader-overflow {
+    overflow-y: hidden;
+}
+
 header {
     background: whitesmoke;
     height: 80px;
@@ -57,10 +73,6 @@ nav ul li:hover a {
     color: rgb(26, 187, 156);
 }
 
-nav ul li a:active {
-    font-size: 14px;
-}
-
 .active,
 nav ul li a:focus {
     color: rgb(26, 187, 156);
@@ -73,7 +85,6 @@ nav ul li a:focus {
     justify-content: center;
     display: none;
     cursor: pointer;
-    margin-right: 20px;
 }
 
 .small_device_nav:hover .line_1,

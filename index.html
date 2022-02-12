@@ -8,7 +8,10 @@
     <title>MARBLE</title>
 </head>
 
-<body>
+<body class="preloader-overflow">
+    <div class="preloader">
+        <img src="images/loading.gif" alt="">
+    </div>
     <header>
         <nav>
             <div class="logo ">MARBLE</div>
@@ -181,6 +184,13 @@
                 document.querySelector('.small_device_nav').style.display = 'flex';
                 this.style.display = 'none';
             })
+        })
+
+
+        var preloader = document.querySelector('.preloader');
+        window.addEventListener('load', function() {
+            preloader.parentElement.removeChild(preloader);
+            document.querySelector('.preloader-overflow').classList.remove('preloader-overflow')
         })
     </script>
     <!-- Scroll Reveal JS -->
